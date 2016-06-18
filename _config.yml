@@ -73,6 +73,6 @@ deploy:
   branch: master
 
 backup:
-    type: git 
+    type: git
     repository:
        github: https://github.com/Amastyer/Amastyer.github.io.git,develop
