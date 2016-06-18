@@ -75,4 +75,4 @@ deploy:
 backup:
     type: git
     repository:
-       github: https://github.com/Amastyer/Amastyer.github.io.git,develop
+       github: https://github.com/Amastyer/Amastyer.github.io.git, develop
