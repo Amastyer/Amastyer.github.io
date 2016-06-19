@@ -4,17 +4,24 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Amast</title>
+  <title>Loopback优化技巧——提高登录和注册性能 | Amast</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Amast&apos;s blog | javascript | node | nodejs | 程序猿">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Amast">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="初次使用loopback框架进行开发时就发现登陆和注册的速度慢得令人发指，有一天终于受不了了，决定找出问题所在。
+loopback的用户模型一般都继承自官方封装的User模型，少爷的项目当然也不例外，我们打开${workspaceRoot}/node_modules/loopback/common/models/user.js，发现login方法如下：
+123456789101112131415">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Loopback优化技巧——提高登录和注册性能">
+<meta property="og:url" content="http://yoursite.com/2016/06/19/Loopback优化技巧——提高登录和注册性能/index.html">
 <meta property="og:site_name" content="Amast">
-<meta property="og:description" content="Amast&apos;s blog | javascript | node | nodejs | 程序猿">
+<meta property="og:description" content="初次使用loopback框架进行开发时就发现登陆和注册的速度慢得令人发指，有一天终于受不了了，决定找出问题所在。
+loopback的用户模型一般都继承自官方封装的User模型，少爷的项目当然也不例外，我们打开${workspaceRoot}/node_modules/loopback/common/models/user.js，发现login方法如下：
+123456789101112131415">
+<meta property="og:updated_time" content="2016-06-19T05:02:26.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Amast">
-<meta name="twitter:description" content="Amast&apos;s blog | javascript | node | nodejs | 程序猿">
+<meta name="twitter:title" content="Loopback优化技巧——提高登录和注册性能">
+<meta name="twitter:description" content="初次使用loopback框架进行开发时就发现登陆和注册的速度慢得令人发指，有一天终于受不了了，决定找出问题所在。
+loopback的用户模型一般都继承自官方封装的User模型，少爷的项目当然也不例外，我们打开${workspaceRoot}/node_modules/loopback/common/models/user.js，发现login方法如下：
+123456789101112131415">
   
     <link rel="alternative" href="/atom.xml" title="Amast" type="application/atom+xml">
   
@@ -175,9 +182,7 @@
 	</div>
 </nav>
 
-      <div class="body-wrap">
-  
-    <article id="post-Loopback优化技巧——提高登录和注册性能" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Loopback优化技巧——提高登录和注册性能" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2016/06/19/Loopback优化技巧——提高登录和注册性能/" class="article-date">
@@ -193,12 +198,23 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/19/Loopback优化技巧——提高登录和注册性能/">Loopback优化技巧——提高登录和注册性能</a>
+    <h1 class="article-title" itemprop="name">
+      Loopback优化技巧——提高登录和注册性能
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/loopback/">loopback</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -222,102 +238,68 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/loopback/">loopback</a></li></ul>
-	</div>
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/06/19/Ubuntu-16-04-安装有道词典/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Ubuntu 16.04 安装有道词典</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
   
 </article>
 
 
-
-
-
-
-
-
-
-  
-    <article id="post-Ubuntu-16-04-安装有道词典" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/06/19/Ubuntu-16-04-安装有道词典/" class="article-date">
-  	<time datetime="2016-06-18T16:35:33.000Z" itemprop="datePublished">2016-06-19</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/19/Ubuntu-16-04-安装有道词典/">Ubuntu 16.04 安装有道词典</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>作为一个英语奇烂无比的次时代程序员，怎么能没有一款好的翻译工具在手呢，难道我每次需要翻译的时候都去打开浏览器么，这真是太影响效率了(PS: 其实之前有基于百度翻译API开发过一款简单的翻译工具，后来发现有Linux版本的有道就放弃了)</p>
-<p>言归正传，最近博主升级了16.04，去<a href="http://cidian.youdao.com/" title="Title" target="_blank" rel="external">有道词典官网</a>下载了最新的1.1.0版本进行安装：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg -i youdao-dict_1.1.0-0-ubuntu_amd64.deb</span><br></pre></td></tr></table></figure>
-<p>执行结果如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">(正在读取数据库 ... 系统当前共安装有 277684 个文件和目录。)</span><br><span class="line">正准备解包 youdao-dict_1.1.0-0-ubuntu_amd64.deb  ...</span><br><span class="line">正在将 youdao-dict (1.1.0-0~ubuntu) 解包到 (1.0.2~ubuntu) 上 ...</span><br><span class="line">dpkg: 依赖关系问题使得 youdao-dict 的配置工作不能继续：</span><br><span class="line"> youdao-dict 依赖于 gstreamer0.10-plugins-ugly；然而：</span><br><span class="line">  未安装软件包 gstreamer0.10-plugins-ugly。</span><br><span class="line"></span><br><span class="line">dpkg: 处理软件包 youdao-dict (--install)时出错：</span><br><span class="line"> 依赖关系问题 - 仍未被配置</span><br><span class="line">正在处理用于 hicolor-icon-theme (0.15-0ubuntu1) 的触发器 ...</span><br><span class="line">正在处理用于 bamfdaemon (0.5.3~bzr0+16.04.20160523-0ubuntu1) 的触发器 ...</span><br><span class="line">Rebuilding /usr/share/applications/bamf-2.index...</span><br><span class="line">正在处理用于 gnome-menus (3.13.3-6ubuntu3) 的触发器 ...</span><br><span class="line">正在处理用于 desktop-file-utils (0.22-1ubuntu5) 的触发器 ...</span><br><span class="line">正在处理用于 mime-support (3.59ubuntu1) 的触发器 ...</span><br><span class="line">在处理时有错误发生：</span><br><span class="line"> youdao-dict</span><br></pre></td></tr></table></figure>
-<p>看输出，发现我们安装失败了，我就看不懂了，你说你一个翻译软件依赖gstreamer0.10-plugins-ugly是几个意思，按照正常思路，此时我们应该执行如下命令强制修复依赖：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install -f</span><br></pre></td></tr></table></figure>
-<p>输出如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">正在读取软件包列表... 完成</span><br><span class="line">正在分析软件包的依赖关系树       </span><br><span class="line">正在读取状态信息... 完成       </span><br><span class="line">正在修复依赖关系... 完成</span><br><span class="line">下列软件包将被【卸载】：</span><br><span class="line">  youdao-dict</span><br><span class="line">升级了 0 个软件包，新安装了 0 个软件包，要卸载 1 个软件包，有 26 个软件包未被升级。</span><br><span class="line">有 1 个软件包没有被完全安装或卸载。</span><br><span class="line">解压缩后将会空出 13.5 MB 的空间。</span><br><span class="line">您希望继续执行吗？ [Y/n]</span><br></pre></td></tr></table></figure>
-<p>apt工具告诉我们youdao-dict将被卸载，what the fxxk? 居然找不到这个包，去官网一看，是2015-12-30发布的就释然了，估计依赖在ubuntu16.04上有差异，这时候我开始方了，难道要解包修改依赖再重新打包么？答案当然是不，机智的我找到了有道词典的1.0版本(博主已上传七牛)<a href="http://o8z1hn5vs.bkt.clouddn.com/youdao-dict_1.0.2~ubuntu_amd64.deb" title="Title" target="_blank" rel="external">下载传送门</a>，下载完成进入文件所在目录，执行如下命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg -i youdao-dict_1.0.2~ubuntu_amd64.deb</span><br><span class="line">sudo apt-get install -f</span><br></pre></td></tr></table></figure>
-<p>执行完这两条命令，如果安装顺利，现在你已经可以启动有道词典~\(≧▽≦)/~啦啦啦</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">youdao-dict</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li></ul>
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 	</div>
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
 
 
 
 
 
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="Loopback优化技巧——提高登录和注册性能" data-title="Loopback优化技巧——提高登录和注册性能" data-url="http://yoursite.com/2016/06/19/Loopback优化技巧——提高登录和注册性能/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
 
 
-  
-  
+
 </div>
       <footer id="footer">
   <div class="outer">
@@ -341,8 +323,8 @@
 		fancybox: true,
 		mathjax: true,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
