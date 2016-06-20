@@ -109,7 +109,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/loopback/" style="font-size: 10px;">loopback</a>
+						<a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/loopback/" style="font-size: 10px;">loopback</a> <a href="/tags/qml/" style="font-size: 10px;">qml</a> <a href="/tags/web/" style="font-size: 10px;">web</a>
 					</div>
 				</section>
 				
@@ -176,6 +176,85 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-WEB-版本的QML引擎" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/06/20/WEB-版本的QML引擎/" class="article-date">
+  	<time datetime="2016-06-20T15:26:52.000Z" itemprop="datePublished">2016-06-20</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/20/WEB-版本的QML引擎/">WEB 版本的QML引擎</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote>
+<p><a href="https://github.com/qmlweb/qmlweb" target="_blank" rel="external">qmlweb</a> 是一个 Web 版本的 QML 引擎，是个 JavaScript 驱动的 QML 引擎。CSS 和 HTML 都不擅长于界面设计和交互接口，Qt 提供了一个很好的解决方案：QML。QML 是个声明性语言，非常适用于 UI 设计。qmlweb 的目标是把 QML 的特性应用到 Web 浏览器。</p>
+</blockquote>
+<p>突然发现qml居然可以跑在浏览器，真是好兴奋ヾ(o◕∀◕)ﾉヾ，那时我的心情是酱紫的：喔肏，终于不用写html标签了，终于不用写CSS了，终于不用。。。（由于博主太过激动，已经语无伦次，以下省略一万字），刚开始接触qmlweb，其实我是拒绝的，毕竟我是一名伟大的JavaScript程序员（嘿，谁在拿鸡蛋丢我，给少爷站粗来💢），不过qml实在太好用了，就像加了特效，Duang！Duang！Duang！（嘘！悄悄告诉大家，其实博主在吹牛B，这玩意还只是一个试验品，千万别上当）只需要一种语言就可以实现UI的设计。举个🌰（哈，博主太懒，这儿直接抄的官方亻，嘿！谁在喷我口水！尊重一下我好不嘞？）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">import QtQuick 2.0</span><br><span class="line"></span><br><span class="line">Rectangle &#123;</span><br><span class="line">   width: 500; height: 200</span><br><span class="line">   color: &quot;lightgray&quot;</span><br><span class="line"></span><br><span class="line">   Text &#123;</span><br><span class="line">       id: helloText</span><br><span class="line">       text: &quot;Hello world!&quot;</span><br><span class="line">       anchors.verticalCenter: parent.verticalCenter</span><br><span class="line">       anchors.horizontalCenter: parent.horizontalCenter</span><br><span class="line">       font.pointSize: 24; font.bold: true</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这样我们就在浏览器绘制出了一个500<em>300px的浅灰色矩形，在矩形的中间有悬浮着文本”Hello World!”，看起来似乎有点酷，是不是想入坑了呢(</em>^__^*) 嘻嘻……，别着急，等我把坑挖好，大家排队跳。</p>
+<h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><blockquote>
+<p>官方提供了npm、Bower等安装方法，不过我等Qt开发者貌似不怎么鸟node那一套，我们采用原始一点的安装方法，直接下载<a href="https://github.com/qmlweb/qmlweb/releases" target="_blank" rel="external">Release</a>版本到本地进行解压即可。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># linux</span><br><span class="line">wget https://github.com/qmlweb/qmlweb/archive/v0.1.0.zip</span><br><span class="line">unzip v0.1.0.zip</span><br><span class="line">cd qmlweb-0.1.0</span><br><span class="line"></span><br><span class="line"># mac和windows下载解压即可</span><br></pre></td></tr></table></figure>
+<h3 id="新建项目"><a href="#新建项目" class="headerlink" title="新建项目"></a>新建项目</h3><p>我们新建一个目录qmlweb-demo，将qmlweb-0.1.0目录里的lib目录复制到qmlweb-demo里，在目录中新建一个qml文件夹和一个index.html文件，最后在qml文件夹中新建一个main.qml，这时候你的项目结构看起来是酱紫的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">├─qmlweb-demo</span><br><span class="line">│  ├─lib</span><br><span class="line">│  ├─qml</span><br><span class="line">│  │  └─main.qml</span><br><span class="line">|  └─index.html</span><br></pre></td></tr></table></figure>
+<h3 id="使用qmlweb"><a href="#使用qmlweb" class="headerlink" title="使用qmlweb"></a>使用qmlweb</h3><p>在index.html中插入代码：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>QML Auto-load Example<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">"margin: 0;"</span> <span class="attr">data-qml</span>=<span class="string">"qml/main.qml"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"lib/qt.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>body标签中的data-qml属性指定了qml的入口文件是qml目录下的main.qml，大家看到这儿可能会疑惑啦，肯定又想骂我了：Amast，你到底靠不靠谱，这代码里啥实质性的东东的都没有啊，你不会又在忽悠人吧，你到底行不行啊（噗，其实我是无辜的呀💔，先等我说完好咩），我们看html文件中引入的lib/qt.js文件中有这样一段代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">global.addEventListener(<span class="string">'load'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> metaTags = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'BODY'</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; metaTags.length; ++i) &#123;</span><br><span class="line">        <span class="keyword">var</span> metaTag = metaTags[i];</span><br><span class="line">        <span class="keyword">var</span> source = metaTag.getAttribute(<span class="string">'data-qml'</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (source != <span class="literal">null</span>) &#123;</span><br><span class="line">            global.qmlEngine = <span class="keyword">new</span> QMLEngine();</span><br><span class="line">            qmlEngine.loadFile(source);</span><br><span class="line">            qmlEngine.start();</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>我们引入qt.js的时候就已经就已经做了处理啦，所以我们只需要上边的html文件提供一个舞台就可以啦，剩下的就统统交给qml吧，接下来我们在main.qml中写入以下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">import QtQuick 2.0</span><br><span class="line"></span><br><span class="line">Rectangle &#123;</span><br><span class="line">   color: &quot;red&quot;;</span><br><span class="line">   anchors.fill: parent;</span><br><span class="line"></span><br><span class="line">   Rectangle &#123;</span><br><span class="line">       color: &quot;blue&quot;;</span><br><span class="line">       width: parent.width / 2;</span><br><span class="line">       height: parent.height / 2;</span><br><span class="line">       anchors.centerIn: parent;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>接下来在浏览器中打开index.html，你就会发现浏览器里面出现了两个矩形，蓝色的悬浮在红色的中间，宽和高都是红色的矩形的一半，是不是比html + css + js 简单多了呢？n(<em>≧▽≦</em>)n</p>
+<p>教程到这儿就结束啦~(≧▽≦)/~啦啦啦</p>
+<blockquote>
+<p>qmlweb加载qml文件和模块使用的是ajax技术，大家可能会遇到跨域的问题，qml文件最好是和html放在同一个服务器上，以规避浏览器同源策略。</p>
+</blockquote>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/qml/">qml</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-Loopback优化技巧——提高登录和注册性能" class="article article-type-post" itemscope itemprop="blogPost">
   
