@@ -8,6 +8,8 @@ tags: loopback
 
 loopback的用户模型一般都继承自官方封装的User模型，少爷的项目当然也不例外，我们打开${workspaceRoot}/node_modules/loopback/common/models/user.js，发现login方法如下：
 
+<!-- more -->
+
 ```javascript
   User.login = function(credentials, include, fn) {
     var self = this;

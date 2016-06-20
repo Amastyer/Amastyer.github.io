@@ -14,6 +14,8 @@ sudo dpkg -i youdao-dict_1.1.0-0-ubuntu_amd64.deb
 
 执行结果如下：
 
+<!-- more -->
+
 ``` shell
 (正在读取数据库 ... 系统当前共安装有 277684 个文件和目录。)
 正准备解包 youdao-dict_1.1.0-0-ubuntu_amd64.deb  ...
