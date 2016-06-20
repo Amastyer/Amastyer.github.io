@@ -18,7 +18,7 @@ qmlweb 是一个 Web 版本的 QML 引擎，是个 JavaScript 驱动的 QML 引�
 qmlweb 是一个 Web 版本的 QML 引擎，是个 JavaScript 驱动的 QML 引擎。CSS 和 HTML 都不擅长于界面设计和交互接口，Qt 提供了一个很好的解决方案：QML。QML 是个声明性语言，非常适用于 UI 设计。qmlweb 的目标是把 QML 的特性应用到 Web 浏览器。
 
 突然发现qml居然可以跑在浏览器，真是好兴奋ヾ(o◕∀◕)ﾉヾ，那时我的心情是酱紫的">
-<meta property="og:updated_time" content="2016-06-20T16:52:47.000Z">
+<meta property="og:updated_time" content="2016-06-20T17:12:54.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="WEB 版本的QML引擎">
 <meta name="twitter:description" content="前言
@@ -82,7 +82,7 @@ qmlweb 是一个 Web 版本的 QML 引擎，是个 JavaScript 驱动的 QML 引�
 						<li>Tags</li>
 						
 						
-						<li>Über</li>
+						<li>A propos</li>
 						
 					</ul>
 				</div>
@@ -228,6 +228,7 @@ qmlweb 是一个 Web 版本的 QML 引擎，是个 JavaScript 驱动的 QML 引�
 <p>突然发现qml居然可以跑在浏览器，真是好兴奋ヾ(o◕∀◕)ﾉヾ，那时我的心情是酱紫的：喔肏，终于不用写html标签了，终于不用写CSS了，终于不用。。。（由于博主太过激动，已经语无伦次，以下省略一万字），刚开始接触qmlweb，其实我是拒绝的，毕竟我是一名伟大的JavaScript程序员（嘿，谁在拿鸡蛋丢我，给少爷站粗来💢），不过qml实在太好用了，就像加了特效，Duang！Duang！Duang！（嘘！悄悄告诉大家，其实博主在吹牛B，这玩意还只是一个试验品，千万别上当）只需要一种语言就可以实现UI的设计。举个🌰（哈，博主太懒，这儿直接抄的官方亻，嘿！谁在喷我口水！尊重一下我好不嘞？）：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">import QtQuick 2.0</span><br><span class="line"></span><br><span class="line">Rectangle &#123;</span><br><span class="line">   width: 500; height: 200</span><br><span class="line">   color: &quot;lightgray&quot;</span><br><span class="line"></span><br><span class="line">   Text &#123;</span><br><span class="line">       id: helloText</span><br><span class="line">       text: &quot;Hello world!&quot;</span><br><span class="line">       anchors.verticalCenter: parent.verticalCenter</span><br><span class="line">       anchors.horizontalCenter: parent.horizontalCenter</span><br><span class="line">       font.pointSize: 24; font.bold: true</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>这样我们就在浏览器绘制出了一个500<em>300px的浅灰色矩形，在矩形的中间有悬浮着文本”Hello World!”，看起来似乎有点酷，是不是想入坑了呢(</em>^__^*) 嘻嘻……，别着急，等我把坑挖好，大家排队跳。</p>
+<a id="more"></a>
 <h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><blockquote>
 <p>官方提供了npm、Bower等安装方法，不过我等Qt开发者貌似不怎么鸟node那一套，我们采用原始一点的安装方法，直接下载<a href="https://github.com/qmlweb/qmlweb/releases" target="_blank" rel="external">Release</a>版本到本地进行解压即可。</p>
 </blockquote>
